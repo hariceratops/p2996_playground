@@ -11,6 +11,7 @@ and libcxx
 The built clangd can be used with LSP clients in text editors like Neovim
 
 ```bash
+# from the llvm-project root
 cmake -S llvm -B build -DLLVM_ENABLE_ASSERTIONS=ON -DLLVM_UNREACHABLE_OPTIMIZE=ON -DCLANG_DEFAULT_CXX_STDLIB=libc++ -DLLVM_ENABLE_PROJECTS="clang;clang-tools-extra" -DLLVM_ENABLE_RUNTIMES="libcxx;libcxxabi;libunwind" -DCMAKE_BUILD_TYPE=Release
 sudo cmake --install build --prefix /usr/local/clang/21.0.0
 ```
