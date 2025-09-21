@@ -18,24 +18,12 @@ target_compile_options(
   -nostdlib++
   "$<$<COMPILE_LANGUAGE:CXX>:-isystem${LIBCXX_INSTALL}/include/c++/v1>"
   "$<$<COMPILE_LANGUAGE:CXX>:-isystem${LIBCXX_INSTALL}/include/x86_64-unknown-linux-gnu/c++/v1>"
-  # -isystem ${LIBCXX_INSTALL}/include/c++/v1
-  # -isystem ${LIBCXX_INSTALL}/include/x86_64-unknown-linux-gnu/c++/v1
   -std=c++26
   -Wall 
   -Wextra 
   -Wpedantic 
   -freflection-latest
 )
-
-# target_compile_options(
-#   p2996 PRIVATE
-#   -isystem ${LIBCXX_INSTALL}/include/c++/v1
-# )
-#
-# target_compile_options(
-#   p2996 PRIVATE
-#   -isystem ${LIBCXX_INSTALL}/include/x86_64-unknown-linux-gnu/c++/v1
-# )
 
 target_link_options(
   p2996 PRIVATE
