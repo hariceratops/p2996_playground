@@ -1,7 +1,5 @@
 
 # p2996-playground
-Implemented as an embedded DSL powered by C++23 TMP.
-
 
 ## Requirements
 Requires the experimental clang compiler from Bloomberg which
